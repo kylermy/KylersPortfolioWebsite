@@ -2583,75 +2583,101 @@ input, select, textarea {
 
 /* Image */
 
-	.image {
-		border: 0;
-		display: inline-block;
-		position: relative;
+/*Rules for About Me Page Photo Organization*/
+/* Responsive grid container */
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	gap: 20px;
+	margin: 20px 0;
+}
+
+/* Image container styling */
+.image {
+	overflow: hidden;
+}
+
+.image img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Specific styles for left and right images */
+.image.left, .image.right {
+	max-width: 40%;
+}
+
+.image.left img, .image.right img {
+	width: 100%;
+}
+
+.image.left {
+	float: left;
+	margin: 0 2rem 2rem 0;
+	top: 0.75rem;
+}
+
+.image.right {
+	float: right;
+	margin: 0 0 2rem 2rem;
+	top: 0.75rem;
+}
+
+/* Fit image style */
+.image.fit {
+	display: block;
+	margin: 2.5rem 0;
+	width: 100%;
+}
+
+.image.fit:first-child {
+	margin-top: 0;
+}
+
+.image.fit img {
+	width: 100%;
+}
+
+/* Main image style */
+.image.main {
+	display: block;
+	margin: 4rem 0;
+	width: 100%;
+}
+
+.image.main:first-child {
+	margin-top: 0;
+}
+
+.image.main img {
+	width: 100%;
+}
+
+/* Media queries for additional responsiveness */
+@media (max-width: 600px) {
+	.image-grid {
+		grid-template-columns: 1fr;
 	}
+}
 
-		.image img {
-			display: block;
-		}
+@media (min-width: 601px) and (max-width: 900px) {
+	.image-grid {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
+}
 
-		.image.left, .image.right {
-			max-width: 40%;
-		}
+@media (min-width: 901px) and (max-width: 1200px) {
+	.image-grid {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+}
 
-			.image.left img, .image.right img {
-				width: 100%;
-			}
-
-		.image.left {
-			float: left;
-			margin: 0 2rem 2rem 0;
-			top: 0.75rem;
-		}
-
-		.image.right {
-			float: right;
-			margin: 0 0 2rem 2rem;
-			top: 0.75rem;
-		}
-
-		.image.fit {
-			display: block;
-			margin: 2.5rem 0;
-			width: 100%;
-		}
-
-			.image.fit:first-child {
-				margin-top: 0;
-			}
-
-			.image.fit img {
-				width: 100%;
-			}
-
-		.image.main {
-			display: block;
-			margin: 4rem 0;
-			width: 100%;
-		}
-
-			.image.main:first-child {
-				margin-top: 0;
-			}
-
-			.image.main img {
-				width: 100%;
-			}
-
-		@media screen and (max-width: 736px) {
-
-			.image.fit {
-				margin: 2rem 0;
-			}
-
-			.image.main {
-				margin: 2rem 0;
-			}
-
-		}
+@media (min-width: 1201px) {
+	.image-grid {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+}
 
 	a.image {
 		overflow: hidden;
