@@ -2086,22 +2086,24 @@ button {
 	border: 2px solid #212931;
 	border-radius: 0.25rem;
 	background-color: transparent;
-	color: #212931;
+	color: #18bfef;
 	transition: background-color 0.2s, box-shadow 0.2s, color 0.2s;
 	cursor: pointer;
 	width: 100%; /* Make buttons take full width on smaller screens */
 	box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
+/* Button Hover State */
 .button:hover,
 .input[type="submit"]:hover,
 .input[type="reset"]:hover,
 .input[type="button"]:hover,
 button:hover {
-	background-color: #18bfef;
-	color: #fff;
-	box-shadow: inset 0 0 0 2px #18bfef;
+	background-color: #FFA500; /* Change background color on hover */
+	color: #FFA500; /* Change text color on hover */
+	box-shadow: inset 0 0 0 2px #fff; /* Add inset shadow on hover */
 }
+
 
 /* Media Queries */
 @media (min-width: 769px) {
@@ -2147,6 +2149,27 @@ button:hover {
 		padding: 0.5rem;
 		font-size: 0.8rem;
 	}
+}
+
+/* Horizontal Scroll for Links to Projects */
+.scroll-wrapper {
+	overflow-x: auto;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+	padding: 1rem 0;
+}
+
+.scroll-wrapper ul {
+	display: inline-flex;
+	padding: 0;
+	margin: 0;
+}
+
+.scroll-wrapper ul li {
+	display: inline-block;
+	margin-right: 1rem;
+	width: 100%; /* Ensure buttons take full width on smaller screens */
+	box-sizing: border-box;
 }
 
 /* End of Responsive Tables & Button Section */
