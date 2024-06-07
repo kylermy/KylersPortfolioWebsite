@@ -2174,6 +2174,28 @@ button:hover {
 
 /* End of Responsive Tables & Button Section */
 
+/* Menu Button */
+#navPanelToggle {
+	display: block; /* Ensure the button is displayed as a block element */
+	position: fixed; /* Position the button fixed on the viewport */
+	top: 1rem; /* Adjust top position as needed */
+	right: 1rem; /* Adjust right position as needed */
+	z-index: 1000; /* Ensure the button appears above other content */
+	padding: 0.5rem 1rem; /* Add padding to the button */
+	background-color: #18bfef; /* Button background color */
+	color: #fff; /* Button text color */
+	border: none; /* Remove button border */
+	border-radius: 0.25rem; /* Apply border radius */
+	font-size: 1rem; /* Button font size */
+	text-decoration: none; /* Remove default link underline */
+}
+
+#navPanelToggle:hover {
+	background-color: #FFA500; /* Change background color on hover */
+	color: #fff; /* Change text color on hover */
+}
+
+
 /* Form */
 
 	form {
@@ -4598,6 +4620,57 @@ button:hover {
 				text-transform: none !important;
 				font-family: 'Font Awesome 5 Free';
 				font-weight: 900;
+			}
+
+			#navPanel .close:before {
+				content: '\f00d';
+				font-size: 1.25rem;
+			}
+
+			#navPanel .close:hover {
+				color: #212931;
+			}
+
+			@media screen and (max-width: 736px) {
+
+				#navPanel .close {
+					height: 4rem;
+					line-height: 4rem;
+				}
+
+			}
+
+			@media screen and (max-width: 980px) {
+
+				#navPanel {
+					display: block;
+				}
+
+			}
+
+			@media screen and (max-width: 736px) {
+
+				#navPanel {
+					padding: 2.5rem 1.75rem;
+				}
+
+			}
+
+			@media screen and (max-width: 980px) {
+
+				body.is-navPanel-visible #wrapper {
+					opacity: 0.5;
+				}
+
+				body.is-navPanel-visible #navPanel {
+					-moz-transform: translateX(0);
+					-webkit-transform: translateX(0);
+					-ms-transform: translateX(0);
+					transform: translateX(0);
+					box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
+					visibility: visible;
+				}
+
 			}
 
 			#navPanel .
