@@ -2194,7 +2194,17 @@ button:hover {
 	background-color: #FFA500; /* Change background color on hover */
 	color: #fff; /* Change text color on hover */
 }
+.center-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+}
 
+.center-container h2 {
+	margin: 0; /* Optional: to remove any default margins */
+}
+/* End of personally added CSS */
 
 /* Form */
 
