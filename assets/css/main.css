@@ -2193,7 +2193,11 @@ button:hover {
 #navPanelToggle:hover {
 	background-color: #FFA500; /* Change background color on hover */
 	color: #fff; /* Change text color on hover */
+
+
 }
+
+
 .center-container {
 	display: flex;
 	justify-content: center;
@@ -4486,7 +4490,7 @@ button:hover {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		display: none;
+		display: block;
 		position: fixed;
 		top: 0.75rem;
 		right: 0.75rem;
@@ -4677,10 +4681,7 @@ button:hover {
 					-webkit-transform: translateX(0);
 					-ms-transform: translateX(0);
 					transform: translateX(0);
-					box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 					visibility: visible;
+					box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
 				}
-
 			}
-
-			#navPanel .
