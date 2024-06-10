@@ -4489,12 +4489,11 @@ button:hover {
 	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-	display: block;
+	display: none;
 	position: fixed;
 	top: 0.75rem;
 	right: 0.75rem;
 	border: 0;
-	color: #ffffff;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 0.9rem;
 	font-weight: 900;
@@ -4502,6 +4501,11 @@ button:hover {
 	padding: 0.375rem 1.25rem;
 	text-transform: uppercase;
 	z-index: 10001;
+	background-color: #18bfef; /* Button background color */
+	color: #fff; /* Button text color */
+	border: none; /* Remove button border */
+	border-radius: 0.25rem; /* Apply border radius */
+	
 }
 
 #navPanelToggle:before {
@@ -4558,7 +4562,7 @@ button:hover {
 	-webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 	-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 	transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-	display: block;
+	display: none;
 	-webkit-overflow-scrolling: touch;
 	background: #ffffff;
 	box-shadow: none;
@@ -4669,15 +4673,19 @@ button:hover {
 
 }
 
-@media screen {
+@media screen and (max-width: 980px) {
+
 	body.is-navPanel-visible #wrapper {
 		opacity: 0.5;
 	}
+
 	body.is-navPanel-visible #navPanel {
+		-moz-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
 		transform: translateX(0);
 		box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 		visibility: visible;
 	}
-}
 
-#navPanel .
+}
