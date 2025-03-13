@@ -2968,7 +2968,6 @@ header.major > .date:before, header.major > .date:after {
 	top: 50%;
 	width: calc(50% - 6rem);
 	border-top: none;
-	z-index: -1;
 }
 
 header.major > .date:before {
