@@ -1,9 +1,9 @@
 Personal Portfolio Website by Kyler M-Y 
 
-This is my portfolio website meant to be a more modern version of a resume for a current LSU Software Engineering Student.
+This is my portfolio website meant to be a more modern version of a resume for a former LSU Software Engineering Student and current System Integration & Test Engineer at Lockheed Martin.
 
-Kyler Martin-Yeboah 
-Louisiana State University | College of Engineering - Computer Science Major (Software Engineering Concentration)
+Kyler Martin-Yeboah
+Louisiana State University | College of Engineering - Computer Science Major (Software Engineering Concentration) Graduate: Spring 2025
 Phi Beta Sigma Fraternity, Inc - Fall '23 | Social Action Director 
 National Society of Leadership and Success | LSU (Sigma Alpha Pi) Chapter 
 LSU Lacrosse - #3
